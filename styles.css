@@ -1,0 +1,677 @@
+body {
+  background-color: black;
+}
+
+.sky {
+  height: 50vh;
+  width: 100%;
+  background-image: linear-gradient(
+    to bottom,
+    #b2eaf3,
+    #92dfeb,
+    #7ed9e7,
+    #3f9fad
+  );
+  animation-name: skyWay;
+  animation-delay: 3s;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+}
+
+.sun {
+  width: 15vmin;
+  height: 15vmin;
+  background-image: linear-gradient(to bottom, #f6d85b, #f8a71e, #f6d85b);
+  border-radius: 50%;
+  position: absolute;
+  left: 70vw;
+  top: 10vh;
+  animation-name: sunSet;
+  animation-delay: 3s;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+}
+
+.moon {
+  width: 0vmin;
+  height: 0vmin;
+  transform: rotate(-30deg);
+  background-image: linear-gradient(
+    to bottom,
+    white,
+    #fbfafd,
+    #e2dfeb,
+    #bbbdc0,
+    #8e9496,
+    #505253
+  );
+  border-radius: 50%;
+  position: absolute;
+  left: 68vw;
+  top: 10vh;
+  animation-name: moonSite;
+  animation-duration: 6s;
+  animation-delay: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+}
+
+.cloud1 {
+  position: absolute;
+  left: 18vmin;
+  top: 15vmin;
+}
+
+.cloud2 {
+  position: absolute;
+  left: 35vmin;
+  top: 7vmin;
+}
+.cloud3 {
+  position: absolute;
+  left: 5vmin;
+  top: 4vmin;
+}
+
+.cloud1,
+.cloud2,
+.cloud3 {
+  animation-name: couldsMove;
+  animation-duration: 6s;
+  animation-delay: 3s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.part {
+  position: absolute;
+  width: 8vmin;
+  height: 7vmin;
+  background-image: linear-gradient(to bottom right, #d6d9f3, #afbac9, #cde0f2);
+  border-radius: 50%;
+  animation-name: cloudColor;
+  animation-duration: 6s;
+  animation-delay: 3s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.one {
+  position: absolute;
+  left: 2vmin;
+}
+.two {
+  position: absolute;
+  left: 3vmin;
+  top: 4vmin;
+}
+
+.three {
+  position: absolute;
+  left: 8vmin;
+}
+.four {
+  position: absolute;
+  left: 7vmin;
+  top: 4vmin;
+}
+
+.star {
+  z-index: 10;
+  width: 0px;
+  height: 0px;
+  background-image: linear-gradient(to bottom, #feffff, #f6fefe, #feffff);
+  transform: rotate(45deg);
+  animation-name: starsIn;
+  animation-duration: 6s;
+  animation-delay: 3s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.s1 {
+  position: absolute;
+  left: 5vw;
+  top: 8vh;
+}
+.s2 {
+  position: absolute;
+  left: 16vw;
+  top: 10vh;
+}
+.s3 {
+  position: absolute;
+  left: 22vw;
+  top: 6vh;
+}
+.s4 {
+  position: absolute;
+  left: 32vw;
+  top: 12vh;
+}
+.s5 {
+  position: absolute;
+  left: 45vsw;
+  top: 7vh;
+}
+.s6 {
+  position: absolute;
+  left: 50vw;
+  top: 13vh;
+}
+.s7 {
+  position: absolute;
+  left: 57vw;
+  top: 6vh;
+}
+.s8 {
+  position: absolute;
+  left: 62vw;
+  top: 12vh;
+}
+.s9 {
+  position: absolute;
+  left: 70vw;
+  top: 4vh;
+}
+.s10 {
+  position: absolute;
+  left: 85vw;
+  top: 6vh;
+}
+.s11 {
+  position: absolute;
+  left: 92vw;
+  top: 8vh;
+}
+.s12 {
+  position: absolute;
+  left: 42vw;
+  top: 7vh;
+}
+.s13 {
+  position: absolute;
+  left: 10vw;
+  top: 11vh;
+}
+.s14 {
+  position: absolute;
+  left: 27vw;
+  top: 5vh;
+}
+.s15 {
+  position: absolute;
+  left: 38vw;
+  top: 12vh;
+}
+.s16 {
+  position: absolute;
+  left: 78vw;
+  top: 2vh;
+}
+.s17 {
+  position: absolute;
+  left: 89vw;
+  top: 3vh;
+}
+
+.mountains {
+  display: flex;
+  justify-content: space-between;
+  height: 15vh;
+  width: 100%;
+  background-image: linear-gradient(
+    to bottom,
+    #37bd50,
+    #229738,
+    #1c752c,
+    #124b1c
+  );
+}
+
+.spike {
+  height: 25vh;
+  width: 30vw;
+  background-image: linear-gradient(
+    to bottom,
+    #4ecf66,
+    #4acc62,
+    #37bd50,
+    #229738,
+    #1c752c,
+    #124b1c
+  );
+  border-radius: 50%;
+}
+.spike-mid {
+  height: 22vh;
+  width: 30vw;
+  background-image: linear-gradient(
+    to bottom,
+    #48ce60,
+    #43c25a,
+    #299e3f,
+    #1c752c,
+    #124b1c
+  );
+  border-radius: 50%;
+}
+.spike-low {
+  height: 20vh;
+  width: 30vw;
+  background-image: linear-gradient(
+    to bottom,
+    #46cf5f,
+    #3dc456,
+    #229738,
+    #1c752c,
+    #124b1c
+  );
+  border-radius: 50%;
+}
+
+.spike1,
+.spike2,
+.spike3,
+.spike4,
+.spike5,
+.spike6,
+.spike7,
+.spike8,
+.spike9,
+.spike10,
+.spike11 {
+  display: inline-block;
+  position: relative;
+}
+
+.spike1,
+.spike4,
+.spike8,
+.spike6,
+.spike11 {
+  bottom: 10vh;
+}
+
+.spike2,
+.spike5,
+.spike9 {
+  bottom: 5vh;
+}
+
+.spike3,
+.spike7,
+.spike10 {
+  bottom: 7vh;
+}
+
+.grass-base {
+  display: flex;
+  justify-content: space-evenly;
+  height: 2vh;
+  width: 100%;
+  background-image: linear-gradient(to bottom, #124b1c, #0f491a);
+}
+
+.grass {
+  position: absolute;
+  display: inline-block;
+  position: relative;
+}
+
+.g1 {
+  position: absolute;
+  width: 2vh;
+  height: 2vh;
+  border-radius: 50%;
+  background-image: linear-gradient(to bottom, #0f491a, #0c4917);
+  /* background-color: red; */
+}
+.right {
+  position: absolute;
+  left: 0.5vh;
+  top: 0.5vh;
+}
+.down {
+  position: absolute;
+  left: 2vh;
+  top: 0.6vh;
+}
+.right1 {
+  position: absolute;
+  left: 3vh;
+  top: 0.5vh;
+}
+.down1 {
+  position: absolute;
+  left: 4vh;
+  top: 0.6vh;
+}
+
+.background {
+  width: 100%;
+  height: 30vh;
+  background-image: linear-gradient(
+    to bottom,
+    #a07e48,
+    #91713e,
+    #7e6031,
+    #755623,
+    #614519
+  );
+  animation-name: land;
+  animation-delay: 3s;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+}
+
+.tree {
+  position: absolute;
+}
+
+.bark {
+  position: relative;
+  background-color: red;
+  background-image: linear-gradient(
+    to right,
+    #324a05,
+    #372911,
+    #513e1e,
+    #75582a,
+    #2d4b0b,
+    #75582a,
+    #513e1e,
+    #372911,
+    #324a05
+  );
+  width: 3vw;
+  height: 15vh;
+  left: 16.5vw;
+  top: 10vh;
+}
+
+.support {
+  position: absolute;
+  transform: translateX(-40%);
+  top: 15vh;
+  border-radius: 45%;
+  overflow: hidden;
+  clip-path: ellipse(100% 40% at 50% 0%);
+  width: 20vw;
+  height: 5vh;
+  /* background-color: red; */
+  background-image: linear-gradient(
+    to bottom,
+    #324a05,
+    #372911,
+    #513e1e,
+    #75582a,
+    #2d4b0b,
+    #75582a,
+    #513e1e,
+    #372911,
+    #324a05
+  );
+  animation-name: treeBottom;
+  animation-delay: 3s;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+}
+
+.crown {
+  position: absolute;
+  transform: translateY(-20vh);
+  left: 11vw;
+  width: 0;
+  height: 0;
+  border-left: 7vw solid transparent;
+  border-right: 7vw solid transparent;
+  border-bottom: 25vh solid #0a3d16;
+}
+
+.crown1 {
+  position: absolute;
+  transform: translateY(-30vh);
+  left: 12vw;
+  width: 0;
+  height: 0;
+  border-left: 6vw solid transparent;
+  border-right: 6vw solid transparent;
+  border-bottom: 25vh solid #0a3d16;
+  animation-name: treeTop;
+  animation-delay: 3s;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.house {
+  position: absolute;
+  left: 50vw;
+}
+
+.wall {
+  position: absolute;
+  width: 30vw;
+  height: 18vh;
+  background-color: rgb(245, 229, 84);
+  top: 5vh;
+  left: 5vw;
+}
+.roof {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 20vw solid transparent;
+  border-right: 20vw solid transparent;
+  border-bottom: 15vh solid red;
+  top: -8vh;
+  animation-name: ghar;
+  animation-delay: 3s;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.door {
+  position: absolute;
+  width: 8vw;
+  height: 15vh;
+  background-color: #0c1f88;
+  left: 16vw;
+  top: 8vh;
+  border: 3px solid black;
+}
+
+.line {
+  position: absolute;
+  height: 15vh;
+  border: 3px solid black;
+  left: 3.5vw;
+}
+
+.window {
+  position: absolute;
+  width: 6vmin;
+  height: 5vmin;
+  border: 2px solid black;
+  background-image: linear-gradient(
+    to right,
+    rgb(221, 221, 47),
+    rgb(223, 223, 95),
+    rgb(241, 241, 141)
+  );
+  left: 18vw;
+  animation-name: kidiki;
+  animation-delay: 3s;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+}
+
+.base {
+  position: absolute;
+  width: 40vw;
+  height: 5vh;
+  background-image: linear-gradient(
+    to bottom,
+    rgb(11, 65, 78),
+    rgb(5, 51, 63),
+    rgb(3, 29, 36)
+  );
+  top: 20vh;
+}
+
+name {
+  color: #020918;
+  position: absolute;
+  left: 2vw;
+  bottom: 2vh;
+  font-size: 3vmax;
+}
+
+/* Animations */
+@keyframes skyWay {
+  100% {
+    background-image: linear-gradient(
+      to bottom,
+      #0b1e49,
+      #0e2350,
+      #19387a,
+      #3e66be,
+      #6a90e2
+    );
+  }
+}
+
+@keyframes sunSet {
+  100% {
+    left: 70vw;
+    top: 48vh;
+    width: 0vmin;
+    height: 0vmin;
+  }
+}
+
+@keyframes moonSite {
+  100% {
+    width: 25vmin;
+    height: 25vmin;
+  }
+}
+
+@keyframes couldsMove {
+  100% {
+    width: 0px;
+    height: 0px;
+    left: 0px;
+    z-index: -1;
+  }
+}
+
+@keyframes cloudColor {
+  100% {
+    width: 7vmin;
+    height: 6vmin;
+    background-image: linear-gradient(to bottom, black, black, black);
+  }
+}
+
+@keyframes starsIn {
+  50% {
+    width: 3px;
+    height: 3px;
+  }
+  100% {
+    width: 2px;
+    height: 2px;
+  }
+}
+
+@keyframes land {
+  100% {
+    background-image: linear-gradient(
+      to bottom,
+      #806232,
+      #6b5126,
+      #61471d,
+      #5e4215,
+      #49330f
+    );
+  }
+}
+
+@keyframes treeTop {
+  100% {
+    border-bottom: 25vh solid #0e6e25;
+  }
+}
+
+@keyframes ghar {
+  100% {
+    border-bottom: 15vh solid rgb(235, 88, 3);
+  }
+}
+
+@keyframes kidiki {
+  100% {
+    background-image: linear-gradient(
+      to right,
+      rgb(12, 12, 12),
+      rgb(51, 51, 47),
+      rgb(83, 83, 81)
+    );
+  }
+}
+
+@media (min-width: 600px) {
+  name {
+    font-size: 3vmin;
+    color: #020918;
+    position: absolute;
+    transform: rotate(0deg);
+    bottom: 27vh;
+  }
+}
+
+@keyframes treeBottom {
+  100% {
+    /* background-image: linear-gradient(
+      to left,
+      #b4b9bb,
+      #686d6e,
+      #4a5e2e,
+      #0c421c,
+      #0a410a,
+      #22410e,
+      #0b250b,
+      #111b07,
+      #041304
+    ); */
+    background-image: linear-gradient(
+      to bottom,
+      #141d04,
+      #3b2d0c,
+      #52471a,
+      #382e1d,
+      #314619,
+      #75582a,
+      #513e1e,
+      #372911,
+      #324a05
+    );
+  }
+}
